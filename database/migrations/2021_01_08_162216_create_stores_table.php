@@ -23,8 +23,8 @@ class CreateStoresTable extends Migration
             $table->string('lon', 20)->nullable();
             $table->string('phoneNumber', 20)->nullable();
             $table->string('cfsFlag', 5)->nullable();
-            $table->string('invalidFields', 255)->nullable();
-            $table->timestamps(); 
+            // $table->string('invalidFields', 255)->nullable();
+            $table->timestamps();
         });
     }
 

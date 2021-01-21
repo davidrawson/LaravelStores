@@ -14,7 +14,6 @@ class Store extends Model
         'lat',
         'lon',
         'phonenumber',
-        'cfgsFlag',
-        'invalidFields'
+        'cfsFlag',
     ];
 }

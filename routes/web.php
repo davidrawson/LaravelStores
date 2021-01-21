@@ -19,11 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/errors', function () {
-    return App\Models\Store::all()->pluck('invalidFields');
+    return App\Models\Error::all()->pluck('invalidFields');
 });
 
 Route::get('/errors/{id}', function ($id) {
-    return App\Models\Store::all()->where('storeNumber', $id)->pluck('invalidFields');
+    return App\Models\Error::all()->where('store_id', $id)->pluck('invalidFields');
 });
 
 Route::resource('/stores', StoreController::class);
